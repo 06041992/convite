@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encontro Masculino - Convite</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #1a2a3a;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            padding: 30px 0;
+            background-color: #0d1a26;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        
+        h1 {
+             font-family: 'Dancing Script', cursive;
+            color: #f0c14b;
+            font-size: 4em;
+            margin-bottom: 10px;
+             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        .destaque {
+            color: #f0c14b;
+            font-weight: bold;
+        }
+        
+        .card {
+            background-color: #0d1a26;
+            padding: 25px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            border-left: 5px solid #f0c14b;
+        }
+        
+        .info-box {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 30px 0;
+        }
+        
+        .info-item {
+            background-color: #2c3e50;
+            padding: 15px;
+            border-radius: 8px;
+            width: 200px;
+            text-align: center;
+            margin: 10px;
+        }
+        
+        .cta-button {
+            display: block;
+            background-color: #f0c14b;
+            color: #1a2a3a;
+            text-align: center;
+            padding: 15px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2em;
+            margin: 30px auto;
+            width: 250px;
+            transition: background-color 0.3s;
+            cursor: pointer;
+            border: none;
+        }
+        
+        .cta-button:hover {
+            background-color: #e2b645;
+        }
+        
+        /* Estilos do formulário */
+        #formulario-cadastro {
+            display: none;
+            background-color: #0d1a26;
+            padding: 30px;
+            border-radius: 10px;
+            margin-top: 30px;
+            border-top: 5px solid #f0c14b;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        
+        .form-group input {
+            width: 100%;
+            padding: 12px;
+            border-radius: 6px;
+            border: 1px solid #2c3e50;
+            background-color: #2c3e50;
+            color: white;
+            font-size: 16px;
+        }
+        
+        .form-group input:focus {
+            outline: none;
+            border-color: #f0c14b;
+        }
+        
+        /* Estilos da confirmação */
+        #confirmacao {
+            display: none;
+            background-color: #0d1a26;
+            padding: 40px;
+            border-radius: 10px;
+            margin-top: 30px;
+            text-align: center;
+            border-top: 5px solid #25D366;
+        }
+        
+        .check-icon {
+            font-size: 80px;
+            color: #25D366;
+            margin-bottom: 20px;
+        }
+        
+        .voltar-button {
+            background-color: transparent;
+            color: #f0c14b;
+            border: 1px solid #f0c14b;
+            padding: 12px 25px;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-top: 30px;
+            font-size: 1.1em;
+            transition: background-color 0.3s;
+        }
+        
+        .voltar-button:hover {
+            background-color: rgba(240, 193, 75, 0.1);
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+            color: #aaa;
+        }
+        
+        @media (max-width: 600px) {
+            .info-box {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap">
+</head>
+<body>
+    <div class="container">
+        <header id="header">
+            <h1>Encontro: Pais que inspiram !</h1>
+            <p>UM MOMENTO PARA:</p>
+            <p><span class="destaque">Aprendizagem, Descontrair, Compartilhar Experiências e Recarregar as energias</span>
+        </header>
+        
+        <div class="card" id="sobre">
+            <h2>PAI, VOCÊ PRECISA DESTE MOMENTO!</h2>
+            <p>Sabemos como o dia a dia pode ser desgastante - trabalho, responsabilidades, pressões... Tudo isso vai se acumulando e muitas vezes não temos espaço para simplesmente <span class="destaque">SER!</span>.</p>
+            <p>Este encontro é a oportunidade unica para uma pausa necessária. Um espaço seguro entre homens que entendem os desafios que você enfrenta.</p>
+        </div>
+        
+        <div class="info-box">
+            <div class="info-item">
+                <h3>🗓️ Data</h3>
+                <p>16 Agosto</p>
+            </div>
+            <div class="info-item">
+                <h3>⏰ Horário</h3>
+                <p>08:30 às 14:00</p>
+            </div>
+            <div class="info-item">
+                <h3>📍 Local</h3>
+                <p>Casa do Pastor</p>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h2>O que esperar deste encontro?</h2>
+            <ul>
+                <li>👥 <span class="destaque">Boa companhia</span> - Converse com homens que estão na mesma jornada que você</li>
+                <li>🍖 <span class="destaque">Churrasco de qualidade</span> - Muita carne, do jeito que você gosta</li>
+                <li>🎯 <span class="destaque">Atividades recreativas</span> - Sinuca, cartas, ou apenas relaxar</li>
+                <li>💪 <span class="destaque">Encorajamento mútuo</span> - Saia revigorado para enfrentar seus desafios</li>
+            </ul>
+        </div>
+        
+        <button id="btn-participar" class="cta-button">EU VOU PARTICIPAR!</button>
+        
+        <!-- Formulário de Cadastro Simplificado -->
+        <form id="formulario-cadastro">
+            <h2 style="text-align: center; color: #f0c14b;">Complete seu cadastro</h2>
+            
+            <div class="form-group">
+                <label for="nome">Nome Completo</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="telefone">WhatsApp/Celular</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX" required>
+            </div>
+            
+            <div class="form-group">
+                <label>
+                    <input type="checkbox" name="confirmacao" required> 
+                    Confirmo que participarei do encontro no dia 25/11
+                </label>
+            </div>
+            
+            <button type="submit" class="cta-button">CONFIRMAR INSCRIÇÃO</button>
+        </form>
+        
+        <!-- Seção de Confirmação -->
+       <div id="confirmacao">
+    <div style="text-align: center;">
+        <!-- Ícone de fogos de artifício -->
+        <div style="font-size: 60px; margin-bottom: 20px;">
+            🎉🎊✨
+        </div>
+        
+        <h2 style="color: #f0c14b; font-size: 2.2em; margin-bottom: 15px;">
+            EBA! VOCÊ ESTÁ DENTRO, <span id="confirmacao-nome" style="text-transform: uppercase;"></span>!
+        </h2>
+        
+        <div style="font-size: 1.3em; margin-bottom: 25px;">
+            <p>Sua vaga no <span style="font-weight: bold; color: #f0c14b;">Encontro Pais que inspiram</span> está garantida!</p>
+            <p>Prepare-se para um dia incrível de conexão e descontração!</p>
+        </div>
+        
+        <!-- Detalhes do evento em formato de convite -->
+        <div style="background: #2c3e50; border-radius: 10px; padding: 20px; max-width: 500px; margin: 0 auto 25px; border: 2px dashed #f0c14b;">
+            <div style="font-size: 1.4em; margin-bottom: 10px; color: #f0c14b;">
+                VOCÊ ESTÁ CONVIDADO
+            </div>
+            <div style="margin-bottom: 8px;">
+                <span style="font-weight: bold;">📅 Quando:</span> 16 de Agosto
+            </div>
+            <div style="margin-bottom: 8px;">
+                <span style="font-weight: bold;">⏰ Horário:</span> 08:30 às 14:00
+            </div>
+            <div style="margin-bottom: 8px;">
+                <span style="font-weight: bold;">📍 Onde:</span> Casa do Pastor 
+            </div>
+            
+        </div>
+        
+        <!-- Mensagem animada -->
+        <div style="font-size: 1.2em; margin-bottom: 30px; line-height: 1.6;">
+           
+
+            <p>Mal podemos esperar para te receber!</p>
+            <p style="font-style: italic; margin-top: 15px;">"Grandes conexões começam com um simples 'sim'!"</p>
+        </div>
+        
+        <!-- Botão animado -->
+       
+    </div>
+</style>
+            
+            <p style="margin-top: 20px;">
+                “Bem-aventurado o homem que teme ao Senhor... A sua descendência será poderosa na terra; será abençoada a geração dos justos.”
+            </p>
+            
+            <button class="voltar-button" id="btn-voltar">
+                Voltar ao topo
+            </button>
+        </div>
+        
+        <footer>
+            <p>Organização: Assembléia de Deus do Brsil-Bamba</p>
+        </footer>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const btnParticipar = document.getElementById('btn-participar');
+            const formulario = document.getElementById('formulario-cadastro');
+            const confirmacao = document.getElementById('confirmacao');
+            const btnVoltar = document.getElementById('btn-voltar');
+            
+            // Mostrar formulário ao clicar no botão Participar
+            btnParticipar.addEventListener('click', function() {
+                formulario.style.display = 'block';
+                formulario.scrollIntoView({ behavior: 'smooth' });
+                btnParticipar.style.display = 'none';
+            });
+            
+            // Formatar telefone enquanto digita
+            const telefoneInput = document.getElementById('telefone');
+            telefoneInput.addEventListener('input', function(e) {
+                let value = e.target.value.replace(/\D/g, '');
+                
+                if (value.length > 2) {
+                    value = '(' + value.substring(0, 2) + ') ' + value.substring(2);
+                }
+                if (value.length > 10) {
+                    value = value.substring(0, 10) + '-' + value.substring(10, 14);
+                }
+                
+                e.target.value = value;
+            });
+            
+            // Processar o formulário
+            formulario.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Validação básica
+                const nome = document.getElementById('nome').value;
+                const telefone = document.getElementById('telefone').value;
+                
+                if(nome.trim() === '' || telefone.trim() === '') {
+                    alert('Por favor, preencha todos os campos obrigatórios.');
+                    return;
+                }
+                
+                // Mostrar confirmação
+                document.getElementById('confirmacao-nome').textContent = nome;
+                
+                // Esconder formulário e mostrar confirmação
+                formulario.style.display = 'none';
+                confirmacao.style.display = 'block';
+                confirmacao.scrollIntoView({ behavior: 'smooth' });
+                
+                // Aqui você poderia enviar os dados para um servidor
+                console.log('Dados do formulário:', { nome, telefone });
+            });
+            
+            // Voltar ao topo
+            btnVoltar.addEventListener('click', function() {
+                document.getElementById('header').scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+</html>
